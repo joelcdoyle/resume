@@ -28,6 +28,7 @@ gem 'spring',        group: :development
 
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
+gem 'rails_serve_static_assets', group: [:production]
 
 gem 'haml'
 
