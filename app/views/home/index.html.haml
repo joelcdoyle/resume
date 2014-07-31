@@ -1,9 +1,100 @@
-.container
-  .row
-    .col-lg-4
-      = image_tag("joel_headshot.jpg")
-    .col-lg-6
-      %h2
-        Joel C. Doyle
-      %p.lead
-        Web Developer
+#vcard-wrapper
+  .container
+    %section#vcard
+      .jumbotron
+        .row
+          .col-lg-3.col-md-3.col-xs-12.text-center
+            = image_tag("joel_headshot.jpg", class: "img-rounded")
+          .col-lg-5.col-md-4.col-xs-12.text-center-not-lg.text-center-not-md
+            %h2
+              Joel C. Doyle
+            %p.lead
+              Frontend & Backend Web Developer
+          .col-lg-4.col-md-5.col-xs-12.text-center-not-md.text-center-not-lg
+            .panel
+              .panel-body
+                %span.glyphicon.glyphicon-home
+                2313 SW 16th St. Bentonville, AR
+                %br
+                %span.glyphicon.glyphicon-envelope
+                joel.christian.doyle@gmail.com
+                %br
+                %span.glyphicon.glyphicon-phone
+                501.339.8591
+                %br
+                = fa_icon "facebook-square"
+                %a{ href: "http://www.facebook.com/joeldoyle" }
+                  facebook
+                %br
+                = fa_icon "twitter"
+                %a{ href: "http://twitter.com/joeldoyle" }
+                  twitter
+                %br
+                = fa_icon "github"
+                %a{ href: "http://github.com/joelcdoyle" }
+                  github
+                %br
+                = fa_icon "linkedin"
+                %a{ href: "http://www.linkedin.com/pub/joel-doyle/24/19a/a5" }
+                  linkedin
+
+    %section#skills
+      .jumbotron
+        .row
+          .col-lg-12
+            %h2
+              Skills
+            %hr
+        .row
+          .col-lg-4
+            .panel.panel-success
+              .panel-heading
+                %h3.panel-title
+                  Front End
+              .panel-body
+                HAML
+                %br
+                CSS/SASS/SCSS
+                %br
+                Responsive Frameworks (Booststrap/Foundation/Etc)
+                %br
+                Javascript/JQuery/Coffeescript
+                %br
+                Backbone.js
+
+          .col-lg-4
+            .panel.panel-warning
+              .panel-heading
+                %h3.panel-title
+                  Back End
+              .panel-body
+                Ruby/Rails
+                %br
+                Node/Express/Ember.js
+                %br
+                Intermediate PHP
+                %br
+                SQL/Postgresql/MongoDB
+                %br
+                Javascript/JQuery/Coffeescript
+                %br
+                Test-Driven Development
+
+          .col-lg-4
+            .panel.panel-danger
+              .panel-heading
+                %h3.panel-title
+                  Misc
+              .panel-body
+                Git/GitHub
+                %br
+                Continuous Integration(TravisCI)
+                %br
+                Heroku
+                %br
+                Command Line Power User
+                %br
+                Java/C++/Perl
+                %br
+                Moderate iOS/Android
+    %section

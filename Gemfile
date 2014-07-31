@@ -32,6 +32,8 @@ gem 'rails_serve_static_assets', group: [:production]
 
 gem 'haml'
 
+gem "font-awesome-rails"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
